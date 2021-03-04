@@ -1,0 +1,4 @@
+rootProject.name = 'pocbackend'
+include 'contract'
+include 'impl'
+

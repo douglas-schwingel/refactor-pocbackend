@@ -1,0 +1,21 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fe0d814e759, pid=8805, tid=8811
+#
+# JRE version: OpenJDK Runtime Environment 18.9 (11.0.10+9) (build 11.0.10+9)
+# Java VM: OpenJDK 64-Bit Server VM 18.9 (11.0.10+9, mixed mode, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [libjimage.so+0x2759]  ImageStrings::find(Endian*, char const*, int*, unsigned int)+0x69
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/share/apport/apport %p %s %c %d %P %E" (or dumping to /home/maxmendes/Projetos/pocbackend/core.8805)
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=41077 -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant com.maxmendes.pocbackend.PocbackendApplication
+
+Host: AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx, 8 cores, 5G, 
