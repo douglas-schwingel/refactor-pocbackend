@@ -2,6 +2,7 @@ package com.maxmendes.pocbackend.contract.controller;
 
 import com.maxmendes.pocbackend.contract.facade.LinesContractFacade;
 import com.maxmendes.pocbackend.contract.model.LineResponse;
+// TODO cuidar os imports não utilizados
 import com.maxmendes.pocbackend.lines.model.Line;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -19,6 +20,7 @@ public class LinesController {
 
     private final LinesContractFacade linesContractFacade;
 
+//    TODO o default já é o OK. Não precisa explicitar
     @ResponseStatus(HttpStatus.OK)
     @GetMapping
     public List<LineResponse> getAllBusLines(){

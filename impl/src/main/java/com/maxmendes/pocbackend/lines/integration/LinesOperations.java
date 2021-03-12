@@ -22,6 +22,11 @@ public class LinesOperations {
     private String datapoaURI;
 
     public List<Line> getAllLines(RestTemplate restTemplate, ObjectMapper objectMapper) {
+//        TODO poderia ser recebido diretamente como Line[].class
+//        Line[] linesString = restTemplate.getForObject(datapoaURI + "?a=nc&p=%&t=o", Line[].class);
+//        return Optional.ofNullable(linesString)
+//                .map(Arrays::asList)
+//                .orElse(Collections.emptyList());
         String linesString = restTemplate.getForObject(datapoaURI + "?a=nc&p=%&t=o", String.class);
 
         try {
